@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/********** START OF HEADER*************/
+.navbar {
+background: #000;
+padding: 1rem 7rem;
+position: fixed;
+width: 100%;
+z-index: 9999;
+margin: 0 !important;
+}
+.navbar .navbar-brand {
+font-size: 1.4rem;
+font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+color: #fff;
+font-size: 1.1rem;
+padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+color: #00bf6d;
+}
+#navbarSupportedContent button {
+background: #00bf6d;
+font-weight: 600;
+padding: 0.4rem 1.4rem;
+border-radius: 30px;
+}
+#navbarSupportedContent button:hover {
+background: #fff;
+}
+.mid {
+width: 100%;
+height: 85vh;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+.mid video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.hero {
+position: relative;
+}
+.mid .hero p {
+width: 55%;
+font-size: 1.3rem;
+letter-spacing: 0.2px;
+}
+.mid .hero a{
+background: #00bf6d;
+font-weight: 600;
+padding: 0.6rem 1.5rem;
+border-radius: 30px;
+text-decoration: none;
+}
+.mid .hero a:hover {
+background: #fff;
+}
+/********** END OF HEADER*************/
+/********** START OF ABOUT SECTION *************/
+#about {
+background: #000;
+padding-top: 5rem;
+padding-bottom: 4rem;
+}
+#about .text {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin: auto;
+}
+#about h5 {
+color: #00bf6d;
+font-weight: 800;
+font-size: 1rem;
+letter-spacing: 1px;
+}
+/*#about h3{
+font-size: 2.5rem;
+font-weight: 700;
+}*/
+#about p {
+font-weight: 400;
+font-size: 1.1rem;
+letter-spacing: .5px;
+}
+#about a{
+background: #00bf6d;
+font-weight: 600;
+padding: 0.6rem 1.5rem;
+border-radius: 30px;
+text-decoration: none;
+}
+#about a:hover {
+background: #fff;
+}
+/********** END OF ABOUT SECTION *************/
+/********** START OF DISCOVER SECTION *************/
+#discover {
+background: #fff;
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+.dis_img {
+width: 100%;
+height: 100%;
+}
+#discover .text {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin: auto;
+}
+#discover h5 {
+color: #00bf6d;
+font-weight: 800;
+font-size: 1rem;
+letter-spacing: 1px;
+}
+/*#discover h3{
+font-size: 2.5rem;
+font-weight: 700;
+}*/
+#discover p {
+font-weight: 400;
+font-size: 1.1rem;
+letter-spacing: .5px;
+}
+#discover a{
+color: #fff;
+background: #000;
+font-weight: 600;
+padding: 0.6rem 1.5rem;
+border-radius: 30px;
+text-decoration: none;
+}
+#discover a:hover {
+background: #00bf6d;
+color: #000;
+}
+/********** END OF DISCOVER SECTION *************/
+/********** START OF SERVICES SECTION *************/
+#services {
+background: #000;
+padding-top: 4rem;
+}
+#services .one {
+background: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 2rem 1.5rem;
+border-radius: 10px;
+}
+#services a{
+color: #fff;
+background: #000;
+font-weight: 600;
+padding: 0.6rem 1.5rem;
+border-radius: 30px;
+text-decoration: none;
+}
+#services a:hover{
+background: #00bf6d;
+}
+/********** END OF SERVICES SECTION *************/
+/********** START OF JOIN US SECTION *************/
+#join_us {
+padding-top: 5rem;
+}
+#join_us h5{
+color: #00bf6d;
+font-weight: 600;
+}
+/*#join_us h3 {
+font-size: 2rem;
+}*/
+#join_us a{
+color: #fff;
+background: #000;
+font-weight: 600;
+padding: 0.6rem 1.5rem;
+border-radius: 30px;
+text-decoration: none;
+}
+#join_us a:hover{
+background: #00bf6d;
+}
+/********** END OF JOIN US SECTION *************/
+/********** START OF FOOTER SECTION *************/
+footer{
+background: black;
+}
+.f-btn .btn:hover{
+background: #00bf6d;
+border: 1px solid #00bf6d;
+}
+.f-links a{
+text-decoration: none !important;
+}
+.f-links a:hover{
+color: #00bf6d !important;
+}
+/********** END OF FOOTER SECTION *************/
+
+
+/********** START OF MEDIA-QUERY *************/
+@media screen and (max-width: 991px){
+.navbar {
+padding: 1rem;
+}
+
+#navbarSupportedContent > ul{
+padding: 0.5rem 0;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+padding: 1rem 0;
+text-align: center;
+}
+
+#navbarSupportedContent button{
+  margin: auto;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 575px){
+  #about h3, #discover h3, #join_us h3 {
+    font-size: 2rem;
+  }
+}
+
+/********** END OF MEDIA-QUERY   *************/
